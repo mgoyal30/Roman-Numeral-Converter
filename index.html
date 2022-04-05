@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+
+  <body>
+    <div class = "row mb-5" style="text-align:center; padding-bottom: 10px; padding-top: 10px;" >
+    <h4>Roman Numeral Converter</h4><br>
+
+    <div class="container">
+      <div class="converter">
+        <label>Number</label>
+        <input type="number" min = '1' id="number" onkeydown="helper()" />
+      </div>
+      <div class="converter">
+        <label>Roman Numeral</label>
+        <input type="text" id="romannumber" onkeydown="helper2()"/>
+      </div>
+          </div>
+
+
+
+      <div class = "error"><label id = "error_label"></label></div>
+    
+          <button class = "convert" onclick="helper3()"> Convert</button>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
